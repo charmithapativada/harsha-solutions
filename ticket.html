@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Raise Ticket</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>HARSHA PERFECT SOLUTIONS</h1>
+</header>
+
+<section class="hero">
+
+<div class="card">
+
+<h2>Raise Support Ticket</h2>
+
+<form id="ticketForm">
+
+<input type="text" placeholder="Employee Name" required>
+<br><br>
+
+<input type="email" placeholder="Email" required>
+<br><br>
+
+<input type="text" placeholder="Department" required>
+<br><br>
+
+<select required>
+
+<option value="">Select Priority</option>
+
+<option>Low</option>
+
+<option>Medium</option>
+
+<option>High</option>
+
+<option>Critical</option>
+
+</select>
+
+<br><br>
+
+<textarea placeholder="Describe your issue" rows="5" required></textarea>
+
+<br><br>
+
+<button type="submit" class="btn">
+Submit Ticket
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<script>
+
+document.getElementById("ticketForm").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+alert("Ticket Raised Successfully!");
+
+window.location.href = "dashboard.html";
+
+});
+
+</script>
+
+</body>
+</html>
